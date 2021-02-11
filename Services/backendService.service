@@ -1,0 +1,6 @@
+{
+	"DestinationName": "backendService",
+	"OfflineEnabled": false,
+	"RestService": true,
+	"SourceType": "Mobile"
+}

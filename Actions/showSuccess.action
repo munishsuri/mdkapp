@@ -1,0 +1,6 @@
+{
+	"Message": "Created Successfully {NewProperty}",
+	"OnFailure": "/dtdcmobileapp/Actions/NavToMainPage.action",
+	"OnSuccess": "/dtdcmobileapp/Actions/NavToMainPage.action",
+	"_Type": "Action.Type.Message"
+}

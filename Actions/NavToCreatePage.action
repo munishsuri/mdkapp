@@ -1,0 +1,5 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/dtdcmobileapp/Pages/Create.page",
+	"_Type": "Action.Type.Navigation"
+}

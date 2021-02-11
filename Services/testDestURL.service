@@ -1,0 +1,6 @@
+{
+	"DestinationName": "testDestURL",
+	"OfflineEnabled": false,
+	"RestService": true,
+	"SourceType": "Mobile"
+}

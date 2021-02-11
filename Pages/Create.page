@@ -1,0 +1,78 @@
+{
+	"Caption": "Create",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Title",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Default",
+							"PlaceHolder": "Title",
+							"_Name": "Title",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Location",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Location",
+							"_Name": "Location",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Description",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Description",
+							"_Name": "Description",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AllowDefaultValueIfOneItem": false,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Category",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": "/dtdcmobileapp/Rules/getCategory.js",
+							"_Name": "Category",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Select Priority",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": "/dtdcmobileapp/Rules/getPriority.js",
+							"_Name": "Priority",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"IsVisible": true,
+							"OnPress": "/dtdcmobileapp/Rules/createIncident.js",
+							"TextAlignment": "center",
+							"Title": "Insert",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Create",
+	"_Type": "Page"
+}

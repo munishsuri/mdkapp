@@ -1,0 +1,45 @@
+{
+	"Credential": "cf",
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=dtdc.com.sap&ClientId=562c54b3-94c9-4bdc-91c3-81951c18380d&SapCloudPlatformEndpoint=https://hanatest-mg-motor-dtdc-com-sap.cfapps.eu10.hana.ondemand.com&AuthorizationEndpointUrl=https://hanatest-mg-motor-dtdc-com-sap.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://hanatest-mg-motor-dtdc-com-sap.cfapps.eu10.hana.ondemand.com&TokenUrl=https://hanatest-mg-motor-dtdc-com-sap.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "8ee5bbe2-ff5f-49ee-ae15-4457193d821b",
+		"Space": "22df8cab-8525-4ce1-acd1-78e124351ba1",
+		"Deploy": {
+			"Destination": [
+				{
+					"CF": "backendService",
+					"MDK": "backendService",
+					"URL": ""
+				},
+				{
+					"CF": "testDestURL",
+					"MDK": "testDestURL",
+					"URL": ""
+				}
+			],
+			"Name": "ns.dtdcmobileapp",
+			"Version": "1.0.0",
+			"SourceMap": true,
+			"StandaloneRouter": true,
+			"WebClient": {
+				"Dev": false,
+				"Version": "5.0.0",
+				"URL": "https://mdk-webclient-runtime.cfapps.eu10.hana.ondemand.com/runtime-5.0.0/"
+			},
+			"URL": "https://sap-cp-customersuccessteam-hanatest-mg-motor-nsdtdcmobi632a34cc.cfapps.eu10.hana.ondemand.com/nsdtdcmobileapp/index.html"
+		}
+	},
+	"MobileService": {
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/8ee5bbe2-ff5f-49ee-ae15-4457193d821b/space/22df8cab-8525-4ce1-acd1-78e124351ba1",
+		"AppId": "dtdc.com.sap",
+		"Destination": [
+			"backendService",
+			"testDestURL"
+		]
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"Caption": "Filter",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "Filter By",
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"Caption": "Select Category",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"OnValueChange": "/dtdcmobileapp/Rules/categoryChange.js",
+							"PickerItems": "/dtdcmobileapp/Rules/getCategory.js",
+							"_Name": "FormCellListCategory",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"Caption": "Select Status",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"OnValueChange": "/dtdcmobileapp/Rules/categoryChange.js",
+							"PickerItems": "/dtdcmobileapp/Rules/getStatus.js",
+							"_Name": "FormCellListStatus",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"Caption": "Select Priority",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"OnValueChange": "/dtdcmobileapp/Rules/categoryChange.js",
+							"PickerItems": "/dtdcmobileapp/Rules/getPriority.js",
+							"_Name": "FormCellListPriority",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"IsVisible": true,
+							"OnPress": "/dtdcmobileapp/Actions/NavToMainPage.action",
+							"TextAlignment": "center",
+							"Title": "Apply Filter",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "Product_Filter",
+	"_Type": "Page"
+}
