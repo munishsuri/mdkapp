@@ -1,0 +1,104 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"Icon": "sap-icon://save",
+				"IsIconCircular": false,
+				"OnPress": "/dtdcmobileapp/Rules/editEntity.js",
+				"Position": "left",
+				"Text": "Save",
+				"Visible": true
+			},
+			{
+				"Icon": "sap-icon://cancel",
+				"IsIconCircular": false,
+				"OnPress": "/dtdcmobileapp/Actions/CloseEdit.action",
+				"Position": "right",
+				"Text": "Cancel",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Edit",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{title}",
+						"StatusText": "{status_code}",
+						"Subhead": "{ID}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"Controls": [
+						{
+							"AllowDefaultValueIfOneItem": false,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Category",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": "/dtdcmobileapp/Rules/getCategory.js",
+							"PickerPrompt": "Please select one single item",
+							"Value": [
+								"{category_code}"
+							],
+							"_Name": "Category",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowDefaultValueIfOneItem": false,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Priority",
+							"DataPaging": {
+								"PageSize": 50,
+								"ShowLoadingIndicator": false
+							},
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": "/dtdcmobileapp/Rules/getPriority.js",
+							"PickerPrompt": "Please select one single item",
+							"Value": [
+								"{priority_code}"
+							],
+							"_Name": "Priority",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": "{description}",
+							"_Name": "Description",
+							"_Type": "Control.Type.FormCell.Note"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Type": "Section.Type.FormCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Edit",
+	"_Type": "Page"
+}

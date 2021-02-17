@@ -1,0 +1,13 @@
+{
+	"Target": {
+		"Path": "/dtdcmobileapp/Rules/getUrls.js",
+		"RequestProperties": {
+			"Headers": {
+				"Content-Type": "application/json"
+			},
+			"Method": "POST"
+		},
+		"Service": "/dtdcmobileapp/Services/testDestURL.service"
+	},
+	"_Type": "Action.Type.RestService.SendRequest"
+}

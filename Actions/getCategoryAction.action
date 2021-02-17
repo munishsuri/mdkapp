@@ -1,0 +1,11 @@
+{
+	"Target": {
+		"OutputPath": "/d/results",
+		"Path": "/Category",
+		"RequestProperties": {
+			"Method": "GET"
+		},
+		"Service": "/dtdcmobileapp/Services/testDestURL.service"
+	},
+	"_Type": "Action.Type.RestService.SendRequest"
+}

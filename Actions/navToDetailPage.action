@@ -1,5 +1,5 @@
 {
 	"NavigationType": "Cross",
-	"PageToOpen": "/dtdcmobileapp/Pages/Incident_filter.page",
+	"PageToOpen": "/dtdcmobileapp/Pages/Detail.page",
 	"_Type": "Action.Type.Navigation"
 }

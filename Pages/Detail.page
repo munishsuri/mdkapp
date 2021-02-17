@@ -1,0 +1,84 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"Icon": "sap-icon://edit-outside",
+				"IconText": "Edit",
+				"IsIconCircular": false,
+				"OnPress": "/dtdcmobileapp/Actions/navToEditPage.action",
+				"Position": "right",
+				"Text": "Edit",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImageIsCircular": false,
+						"Footnote": "{description}",
+						"HeadlineText": "{title}",
+						"StatusText": "{status_code}",
+						"Subhead": "{ID}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{category_code}"
+						},
+						{
+							"KeyName": "Priority",
+							"Value": "{priority_code}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Open On ",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Value": "{open_on}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Closed On",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Value": "{closed_on}",
+							"_Name": "FormCellSimpleProperty1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Type": "Section.Type.FormCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Detail",
+	"_Type": "Page"
+}

@@ -39,13 +39,23 @@
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Description": "{priority_code}",
-						"Footnote": "{category_code}",
+						"Description": "{category_code}",
+						"Footnote": "{priority_code}",
+						"OnPress": "/dtdcmobileapp/Actions/navToDetailPage.action",
 						"PreserveIconStackSpacing": true,
+						"StatusText": "{status_code}",
 						"Subhead": "{description}",
+						"SubstatusText": "open on : {open_on}",
 						"Title": "{title}"
 					},
-					"Target": "/dtdcmobileapp/Rules/CheckData.js",
+					"Target": {
+						"OutputPath": "/d/results",
+						"Path": "/dtdcmobileapp/Rules/CheckData.js",
+						"RequestProperties": {
+							"Method": "GET"
+						},
+						"Service": "/dtdcmobileapp/Services/testDestURL.service"
+					},
 					"Visible": true,
 					"_Name": "SectionObjectTable0",
 					"_Type": "Section.Type.ObjectTable"

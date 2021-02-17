@@ -1,11 +1,8 @@
+
 export default function checkData(context) {
 
-  
-    let urlpre = context.getGlobalDefinition('/dtdcmobileapp/Globals/Url.global').data.url;
-    if(urlpre == "nsdtdcmobileapp") urlpre = "/"+urlpre+"/";
-
-
-    var url = urlpre + "testDestURL/Incidents";
+    console.log('enter check data');
+    var url = "/Incidents";
 
     // var url = "testDestURL/Incidents";
 
@@ -58,11 +55,7 @@ export default function checkData(context) {
     }
 
     url = url + urlEnd;
-
-    return context.sendRequest(url,{method:'GET'}).then(function (res) {
-    
-        res = JSON.parse(res.content._data);
-        return res["d"]["results"];
-    });
+   
+    return url;
 
 }
